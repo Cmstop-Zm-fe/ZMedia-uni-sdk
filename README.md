@@ -1,4 +1,3 @@
-
 # ZMedia-uni-sdk
 
 [![NPM Version](https://img.shields.io/npm/v/@cmstops/unisdk.svg)](https://www.npmjs.com/package/@cmstops/unisdk)
@@ -46,7 +45,8 @@ npm install @cmstops/unisdk
 在 App.vue 或 main.js(ts) 中加入以下代码：
 
 ```js
-import "@cmstops/unisdk";
+import { createUniSdk } from "@cmstops/unisdk";
+createUniSdk();
 ```
 
 ### 2. 使用 SDK 方法
@@ -113,22 +113,22 @@ globalThis.cmsSdkPlugin.asyncFunc(
 
 | 方法名            | Android | iOS | Harmony |
 | ----------------- | :-----: | :-: | :-----: |
-| login             |    ✅    |  ✅  |    ❌    |
-| getUserInfo       |    ✅    |  ✅  |    ✅    |
-| getSiteInfo       |    ✅    |  ❌  |    ❌    |
-| getSystemResource |    ✅    |  ❌  |    ❌    |
-| pushContent       |    ✅    |  ✅  |    ✅    |
-| pushMpHome        |    ✅    |  ✅  |    ❌    |
-| pushMpUser        |    ✅    |  ✅  |    ❌    |
-| pushTaskCenter    |    ✅    |  ✅  |    ❌    |
-| pushUserAgreement |    ✅    |  ✅  |    ✅    |
-| pushPrivacyNotice |    ✅    |  ✅  |    ✅    |
-| pushCategoryList  |    ✅    |  ✅  |    ❌    |
-| pushBuildinApp    |    ✅    |  ✅  |    ❌    |
-| pushWXMiniApp     |    ✅    |  ✅  |    ❌    |
-| getLocationInfo   |    ✅    |  ❌  |    ❌    |
-| openRecordAudio   |    ✅    |  ❌  |    ❌    |
-| share             |    ✅    |  ✅  |    ❌    |
+| login             |   ✅    | ✅  |   ❌    |
+| getUserInfo       |   ✅    | ✅  |   ✅    |
+| getSiteInfo       |   ✅    | ❌  |   ❌    |
+| getSystemResource |   ✅    | ❌  |   ❌    |
+| pushContent       |   ✅    | ✅  |   ✅    |
+| pushMpHome        |   ✅    | ✅  |   ❌    |
+| pushMpUser        |   ✅    | ✅  |   ❌    |
+| pushTaskCenter    |   ✅    | ✅  |   ❌    |
+| pushUserAgreement |   ✅    | ✅  |   ✅    |
+| pushPrivacyNotice |   ✅    | ✅  |   ✅    |
+| pushCategoryList  |   ✅    | ✅  |   ❌    |
+| pushBuildinApp    |   ✅    | ✅  |   ❌    |
+| pushWXMiniApp     |   ✅    | ✅  |   ❌    |
+| getLocationInfo   |   ✅    | ❌  |   ❌    |
+| openRecordAudio   |   ✅    | ❌  |   ❌    |
+| share             |   ✅    | ✅  |   ❌    |
 
 ## 📘 API 详细说明
 
