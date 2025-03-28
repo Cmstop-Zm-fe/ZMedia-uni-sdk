@@ -1,0 +1,5 @@
+packages:
+  # 所有packages目录下的包都包含在工作空间中
+  - "packages/*"
+  # 所有apps目录下的应用都包含在工作空间中
+  - "apps/*"

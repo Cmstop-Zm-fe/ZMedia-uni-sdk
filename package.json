@@ -1,0 +1,34 @@
+{
+  "name": "zmedia-uni-sdk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ZMedia Uni SDK Monorepo",
+  "packageManager": "pnpm@9.12.1",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "publish:unisdk": "turbo run publish --filter=@cmstops/unisdk"
+  },
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "zmedia",
+    "cmstop",
+    "sdk"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "prettier": "^2.8.7",
+    "turbo": "^2.4.4",
+    "typescript": "^5.0.0",
+    "semver": "^7.5.4"
+  }
+}

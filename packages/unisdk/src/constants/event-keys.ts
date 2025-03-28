@@ -1,0 +1,20 @@
+// SDK事件常量
+export const SDK_EVENT_KEYS = [
+  "getUserInfo",
+  "getSiteInfo",
+  "getSystemResource",
+  "login",
+  "pushContent",
+  "pushMpHome",
+  "pushMpUser",
+  "pushTaskCenter",
+  "pushUserAgreement",
+  "pushPrivacyNotice",
+  "pushCategoryList",
+  "pushBuildinApp",
+  "pushWXMiniApp",
+  "getLocationInfo",
+  "openRecordAudio",
+  "updateUser",
+  "share",
+] as const;

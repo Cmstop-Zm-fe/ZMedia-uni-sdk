@@ -1,0 +1,30 @@
+{
+  "name": "@cmstops/unisdk",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "version": "1.0.0",
+  "description": "CmsTop Uni-App SDK",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts",
+    "prepublish": "node ../../scripts/version.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "sdk",
+    "uni-app",
+    "cmstop"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "terser": "^5.39.0",
+    "tsup": "^8.0.2"
+  }
+}
