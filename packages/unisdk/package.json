@@ -4,15 +4,16 @@
     "access": "public"
   },
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CmsTop Uni-App SDK",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
-    "lib/index.js"
+    "lib/**/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.ts",
+    "build": "tsup src/index.ts --dts",
     "prepublish": "node ../../scripts/version.js",
     "prepublishOnly": "npm run build"
   },

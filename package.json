@@ -1,14 +1,16 @@
 {
   "name": "zmedia-uni-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "ZMedia Uni SDK Monorepo",
   "packageManager": "pnpm@9.12.1",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev",
+    "dev:demo": "turbo run dev --filter=sdk-demo",
     "build": "turbo run build",
     "clean": "turbo run clean",
+    "version": "node ./scripts/version.js",
     "publish:unisdk": "turbo run publish --filter=@cmstops/unisdk"
   },
   "keywords": [
@@ -25,10 +27,14 @@
     "pnpm": ">=7"
   },
   "devDependencies": {
+    "@uni-helper/uni-app-types": "1.0.0-alpha.6",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
+    "semver": "^7.5.4",
     "turbo": "^2.4.4",
-    "typescript": "^5.0.0",
-    "semver": "^7.5.4"
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "degit": "2.8.4"
   }
 }
