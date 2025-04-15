@@ -200,14 +200,14 @@ globalThis.cmsSdkPlugin.asyncFunc(
 }
 ```
 
-### 获取相册内容
+### 获取系统资源
 
 - **方法名**：`getSystemResource`
 - **参数**：
 
 ```js
 {
-  type: 'image'/'video', // 资源类型
+  type: 'image'/'video', // 资源类型（目前仅支持图片和视频）
   max: Number // 上限数量
 }
 ```
