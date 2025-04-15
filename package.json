@@ -1,6 +1,6 @@
 {
   "name": "zmedia-uni-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "ZMedia Uni SDK Monorepo",
   "packageManager": "pnpm@9.12.1",
