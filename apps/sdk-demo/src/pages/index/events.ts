@@ -8,7 +8,7 @@ export default [
     method: "getSiteInfo",
   },
   {
-    label: "获取相册内容",
+    label: "获取系统资源",
     method: "getSystemResource",
     input: "{ type: image/video, max: 上限 }",
     output: "{ data: [{ url: 视频/图片本地资源地址 }] }",
