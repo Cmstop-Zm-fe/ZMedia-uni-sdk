@@ -75,6 +75,7 @@ export default [
   {
     label: "录音",
     method: "openRecordAudio",
+    input: '{ flag: "start/end" }', // flag 参数仅针对 ios
     output: '{ url: "xxx", state: "true/false" }',
   },
   {

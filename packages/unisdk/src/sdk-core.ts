@@ -50,7 +50,7 @@ class CmstopUniSdk {
           callbacks?.success?.(res);
           return;
         }
-        res.code === 0
+        res.code == 0
           ? callbacks?.success?.(res.data || `Method ${key} exec success`)
           : callbacks?.fail?.(
               res.message || `Method ${key} exec fail with no reason`
