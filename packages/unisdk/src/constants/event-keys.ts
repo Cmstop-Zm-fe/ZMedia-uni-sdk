@@ -17,4 +17,5 @@ export const SDK_EVENT_KEYS = [
   "openRecordAudio",
   "updateUser",
   "share",
+  "closeMiniProgram",
 ] as const;
