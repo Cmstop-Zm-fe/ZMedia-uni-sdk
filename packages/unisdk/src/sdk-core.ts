@@ -46,7 +46,7 @@ class CmstopUniSdk {
 
     try {
       this.plugin.asyncFunc({ key, params }, (res: CmstopCallbackResult) => {
-        if (!res.code) {
+        if (res.code == null) {
           callbacks?.success?.(res);
           return;
         }

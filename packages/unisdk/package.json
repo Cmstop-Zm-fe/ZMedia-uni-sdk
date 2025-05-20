@@ -4,7 +4,7 @@
     "access": "public"
   },
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CmsTop Uni-App SDK",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
