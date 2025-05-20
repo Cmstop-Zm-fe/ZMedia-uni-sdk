@@ -78,10 +78,18 @@
                 <input v-model="form.thumb" />
             </view>
         </template>
+		<template v-if="method === 'closeMiniProgram'">
+			<view class="form-item">
+				app_id: 
+				<input v-model="form.app_id" />
+			</view>
+		</template>
     </view>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+import { onMounted } from 'vue'
 import { computed } from 'vue'
 
 type PropsType = {
@@ -100,6 +108,13 @@ const form = computed({
         emits('update:value', value)
     }
 })
+
+onMounted(() => {
+	if(props.method === 'closeMiniProgram') {
+		form.value.app_id = uni.getAppBaseInfo().appId
+	}
+})
+
 </script>
 
 <style scoped>

@@ -94,4 +94,12 @@ export default [
       thumb: "",
     },
   },
+  {
+	  label: "关闭小程序",
+	  method: "closeMiniProgram",
+	  input: "{ app_id: '小程序id'}",
+	  params: {
+		  app_id: ""
+	  }
+  }
 ];
