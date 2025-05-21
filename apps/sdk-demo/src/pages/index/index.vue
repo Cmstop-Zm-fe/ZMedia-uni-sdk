@@ -1,5 +1,6 @@
 <template>
   <view class="content">
+    <button @click="handleRemove">退出小程序</button>
     <view class="content-launch">
       启动参数: <br />
 
@@ -42,6 +43,13 @@ export default {
         this.launchTips = "获取客户端信息失败";
       }
     }, 1000);
+  },
+  methods: {
+    handleRemove() {
+      // #ifdef APP-PLUS
+      plus.runtime.quit();
+      // #endif
+    },
   },
 };
 </script>
