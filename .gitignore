@@ -25,6 +25,7 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+.npmrc
 
 # Testing
 coverage/
@@ -64,3 +65,4 @@ temp/
 
 
 ./packages/**/*/lib/
+pnpm-lock.yaml

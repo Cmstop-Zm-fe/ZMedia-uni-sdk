@@ -101,5 +101,15 @@ export default [
 	  params: {
 		  app_id: ""
 	  }
-  }
+  },
+  {
+		label: '跳转H5',
+		method: 'pushH5',
+		input: '{ link: item.h5_url, nav: true, capsule: false }',
+		params: { link: "", nav: "", capsule: "" }
+	},
+	{
+		label: '跳转实名认证',
+		method: 'pushToCertification',
+	},
 ];

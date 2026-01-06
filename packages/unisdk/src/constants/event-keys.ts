@@ -18,4 +18,6 @@ export const SDK_EVENT_KEYS = [
   "updateUser",
   "share",
   "closeMiniProgram",
+  "pushToCertification",
+  "pushH5"
 ] as const;

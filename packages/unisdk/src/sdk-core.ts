@@ -12,7 +12,7 @@ class CmstopUniSdk {
       // @ts-ignore
       this.plugin = uni.requireNativePlugin("UniSdkModule");
       this.state = 1;
-    } catch (e) {
+    } catch {
       this.state = 3;
       // @ts-ignore
       uni.showToast({ title: "挂载失败", duration: 1500 });
@@ -28,7 +28,7 @@ class CmstopUniSdk {
       }
       this.state = 2;
       this.log("CmsTopSdk initialized Success");
-    } catch (e) {
+    } catch {
       this.log("CmsTopSdk initialized failed", "error");
     }
   }
@@ -50,11 +50,13 @@ class CmstopUniSdk {
           callbacks?.success?.(res);
           return;
         }
-        res.code == 0
-          ? callbacks?.success?.(res.data || `Method ${key} exec success`)
-          : callbacks?.fail?.(
-              res.message || `Method ${key} exec fail with no reason`
-            );
+        if (res.code == 0) {
+          callbacks?.success?.(res.data || `Method ${key} exec success`);
+        } else {
+          callbacks?.fail?.(
+            res.message || `Method ${key} exec fail with no reason`
+          );
+        }
         callbacks?.complete?.(res);
         this.log("CmsTopSdk getMessage");
       });
